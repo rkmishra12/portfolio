@@ -513,116 +513,128 @@ ul{
 }
 
 
+/* Base CSS: unchanged */
 
+/* Add responsive styles using media queries */
 
-/* Default styles apply to larger screens (desktop view) */
-
-/* For tablets (768px and smaller) */
-@media screen and (max-width: 768px) {
+/* General Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
     .navbar {
-        height: 8em; /* Reduce navbar height */
-        flex-direction: column; /* Stack logo and menu vertically */
-    }
-    .logosection {
+        flex-direction: column;
         height: auto;
-        width: 100%;
-        justify-content: center;
-        margin-bottom: 1rem;
+        padding: 1rem 0;
+    }
+    .logosection, .portfolio, .contact {
+        margin: 0.5rem 0;
+        text-align: center;
     }
     .portfolio {
-        font-size: large; /* Adjust font size */
+        width: 90%;
         margin: 0 auto;
-        margin-bottom: 1rem;
     }
     .banner {
-        height: 7rem;
-        width: 7rem;
-        margin: 0 auto;
+        margin: 1rem auto;
+    }
+    .callsection {
+        margin: 1rem auto;
+    }
+    .panel {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
     }
     .herosection {
-        flex-direction: column; /* Stack text and image vertically */
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
     }
-    .hipara,
-    .whitespace {
-        width: 90%; /* Reduce width for readability */
+    .hipara, .whitespace, .intropic {
+        width: 90%;
         margin: 1rem auto;
     }
     .scroll {
-        height: auto;
         flex-wrap: nowrap;
-        overflow-x: scroll;
+        overflow-x: auto;
     }
     .details {
-        width: 80%; /* Reduce width for smaller screens */
-        margin: 1rem auto;
+        width: 80%;
+        margin: 0.5rem auto;
     }
     .photosection {
-        height: auto; /* Adjust height */
+        padding-left: 1rem;
     }
     .photos {
-        height: 10rem;
-        width: 10rem;
+        margin: 0.5rem auto;
+        height: 12rem;
+        width: 12rem;
+    }
+    .amazonbox, .outer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .linkbox, .textbox, .actualslbox {
+        width: 90%;
+        margin: 1rem auto;
     }
     .thankmsg pre {
         width: 90%;
+    }
+    .clicklink {
         margin: 1rem auto;
     }
 }
 
-/* For smartphones (480px and smaller) */
-@media screen and (max-width: 480px) {
+/* Tablet Styles (max-width: 1024px) */
+@media (max-width: 1024px) {
     .navbar {
-        height: auto; /* Allow dynamic height */
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
+        padding: 0.5rem 1rem;
     }
-    .portfolio {
-        font-size: medium;
-        width: 90%;
-        margin-bottom: 1rem;
-    }
-    .banner {
-        height: 5rem;
-        width: 5rem;
-    }
-    .hipara {
-        margin: 1rem auto;
-        text-align: center;
-    }
-    .hi {
-        font-size: 2rem; /* Reduce heading size */
+    .logosection {
         margin: 0 auto;
     }
-    .para {
+    .portfolio {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .panel {
+        justify-content: center;
+    }
+    .herosection {
+        flex-direction: column;
+    }
+    .hipara, .whitespace, .intropic {
         width: 90%;
-        font-size: 0.9rem;
         margin: 1rem auto;
     }
     .scroll {
-        width: 100%; /* Allow horizontal scrolling */
+        padding: 1rem 0;
     }
-    .photosection {
-        padding: 1rem;
+    .details {
+        width: 90%;
+        margin: 0.5rem auto;
     }
     .photos {
-        height: 8rem;
-        width: 8rem;
+        height: 14rem;
+        width: 14rem;
+    }
+    .linkbox, .textbox, .actualslbox {
+        width: 80%;
         margin: 1rem auto;
     }
-    .thankmsg pre {
-        font-size: small;
-        text-align: center;
+}
+
+/* Large Screens and Desktops */
+@media (min-width: 1025px) {
+    .navbar {
+        padding: 1rem 2rem;
     }
-    .amazon pre {
-        font-size: 1.2rem;
-        padding: 1rem;
+    .logosection, .portfolio, .contact {
+        margin: 0 1rem;
     }
-    .sociallinkbox pre {
-        font-size: 1.2rem;
-        padding: 1rem;
+    .herosection {
+        flex-direction: row;
     }
-    footer {
-        font-size: 0.8rem;
+    .scroll {
+        padding: 2rem 0;
     }
 }
