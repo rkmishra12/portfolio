@@ -511,3 +511,118 @@ ul{
 .copyright{
     padding-top: 5px;
 }
+
+
+
+
+/* Default styles apply to larger screens (desktop view) */
+
+/* For tablets (768px and smaller) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 8em; /* Reduce navbar height */
+        flex-direction: column; /* Stack logo and menu vertically */
+    }
+    .logosection {
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .portfolio {
+        font-size: large; /* Adjust font size */
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    .banner {
+        height: 7rem;
+        width: 7rem;
+        margin: 0 auto;
+    }
+    .herosection {
+        flex-direction: column; /* Stack text and image vertically */
+    }
+    .hipara,
+    .whitespace {
+        width: 90%; /* Reduce width for readability */
+        margin: 1rem auto;
+    }
+    .scroll {
+        height: auto;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .details {
+        width: 80%; /* Reduce width for smaller screens */
+        margin: 1rem auto;
+    }
+    .photosection {
+        height: auto; /* Adjust height */
+    }
+    .photos {
+        height: 10rem;
+        width: 10rem;
+    }
+    .thankmsg pre {
+        width: 90%;
+        margin: 1rem auto;
+    }
+}
+
+/* For smartphones (480px and smaller) */
+@media screen and (max-width: 480px) {
+    .navbar {
+        height: auto; /* Allow dynamic height */
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .portfolio {
+        font-size: medium;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .banner {
+        height: 5rem;
+        width: 5rem;
+    }
+    .hipara {
+        margin: 1rem auto;
+        text-align: center;
+    }
+    .hi {
+        font-size: 2rem; /* Reduce heading size */
+        margin: 0 auto;
+    }
+    .para {
+        width: 90%;
+        font-size: 0.9rem;
+        margin: 1rem auto;
+    }
+    .scroll {
+        width: 100%; /* Allow horizontal scrolling */
+    }
+    .photosection {
+        padding: 1rem;
+    }
+    .photos {
+        height: 8rem;
+        width: 8rem;
+        margin: 1rem auto;
+    }
+    .thankmsg pre {
+        font-size: small;
+        text-align: center;
+    }
+    .amazon pre {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+    .sociallinkbox pre {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+}
