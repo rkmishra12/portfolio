@@ -305,6 +305,18 @@
     justify-content: center;
     color:#275165;
 }
+.gdrivelink{
+    text-align: center;
+    padding:50px;
+    color:#275165;
+}
+.gdrivelink a{
+    font-family: monospace;
+    color:#cf9537;
+    text-decoration: underline;
+    font-size:x-large;
+    
+}
 .photos:hover{
     height: 20rem;
     width: 20rem;
