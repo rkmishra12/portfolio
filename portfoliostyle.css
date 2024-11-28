@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     color:#d9d9d9;
-    position: fixed;
+    /* position: fixed; */
 }
 .logosection{
     height:7.7rem;
@@ -113,6 +113,10 @@
     margin-left: 3.3rem;
     color:#d9d9d9;
 }
+.callsection
+{
+    width: 13.2rem;
+}
 
 /* menu panle section */
 
@@ -122,19 +126,15 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    position:fixed;
-    margin-top: 12rem;
     width:100%;
+    /* position:fixed; */
+    /* margin-top: 12rem; */
     
 }
 
 /* This is  the hovereffect */
 .hovereffect:hover{
     border: #a8c5ce 3.2px solid;
-}
-.callsection
-{
-    width: 13.2rem;
 }
 
 
@@ -145,7 +145,7 @@
     color:#275165;
     display: flex;
     justify-content: center;
-    padding-top:15rem;
+    /* padding-top:15rem; */
 }
 .herosection{
     height:33rem;
@@ -265,7 +265,7 @@
 .gallery{
     text-align: center;
     font-size:30px;
-    color:rgb(217, 65, 65);
+    color:#fca311;
     font-weight:550;
     margin-top:170px;
     padding-top: 40px;
@@ -297,7 +297,7 @@
     background-size: cover;
     border-radius:8px;
     transition: all .5s ease;
-
+    
 }
 
 .photomsg {
@@ -312,10 +312,15 @@
 }
 .gdrivelink a{
     font-family: monospace;
-    color:#cf9537;
     text-decoration: underline;
     font-size:x-large;
-    
+    color:#f5ad38;
+    transition: all .5s ease;
+}
+.gdrivelink a:hover{
+    font-size: 23px;
+    color:#fe9e04;
+    text-shadow: #fca311;
 }
 .photos:hover{
     height: 20rem;
@@ -330,21 +335,21 @@
 }
 
 
-/* amazon link */
-
-.amazon{
-    height:600px;
+/* project links */
+.project{
+    height:1200px;
     background-color: #edfcf3;
     margin-top:80px;
 }
-.amazon pre{
+.project pre{
     font-size:40px;
     font-family: cursive;   
     padding-left: 150px ;
     padding-top:70px; 
+    margin-bottom:50px;
 }
 
-.amazonbox{
+.projectbox{
     display: flex;
     justify-content: space-evenly;
 }
@@ -357,6 +362,8 @@
     display: flex;
     border-radius: 10px;
     border: solid rgb(198, 194, 194) 2px;
+    margin-bottom: 150px;
+    /* margin-top:px; */
 }
 
 .linkbox pre{
@@ -377,7 +384,16 @@
     margin-top:150px;
     margin-left:-100px;
     transition: all 0.5s ease;
-    
+}
+.jarvistext{
+    height:100px;
+    width:200px;
+    color: white;
+    font-size:35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .linkbox img{
     height: 100px;
@@ -400,6 +416,8 @@
     margin-top:40px;
     border-radius:12px;
     border: solid rgb(198, 194, 194) 2px;
+    box-shadow: 0px 0px 100px rgb(255, 209, 2);
+    /* padding-bottom: 50px; */
 }
 .textbox pre{
     font-size: 20px;
@@ -411,51 +429,27 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:100;
     color:#063645;
-    margin-top:-50px;
+    margin-top:-90px;
     margin-left: 20px;
 }
 .textdetails{
     height:150px;
     width:570px;
     margin-left:60px;
-    margin-top: 30px;
+    margin-top: -15px;
     
 }
 
 
 
-/* thank massage  section */
-.thankmsg{
-    height:250px;
-    background-color: #f0f6f5;
-    display: flex;
-    justify-content: center;
-    margin-top:80px;
-    align-items: center;
-    
-}
-.thankmsg pre{
-    font-family: cursive;
-    margin-top: 40px;
-    font-size: 20px;
-    height:120px;
-    background-color: white;
-    width:1100px;
-    display:flex;
-    align-items: center;
-    border-radius: 8px;
-    border: solid rgb(189, 187, 187) 2px;
-    color:#063645;
-}
 
 
 /* social media link section */
 
 
 .sociallinkbox{
+    margin-top:80px;
     height: 600px;
-    margin-bottom:300px;
-    margin-top: 80px;
     background-color: #edfcf3;
 }
 .sociallinkbox pre{
@@ -495,6 +489,7 @@
     margin-left:80px;
     border-radius: 4px;
     transition: all 0.5s ease;
+    box-shadow: 0px 5px 70px rgb(132, 175, 245);
 }
 .clicklink p{
     height:90px;
@@ -509,9 +504,36 @@
 
 
 
+
+/* thank massage  section */
+.thankmsg{
+    height:500px;
+    margin-bottom:300px;
+    margin-top: 80px;
+    background-color: #f0f6f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.thankmsg pre{
+    font-family: cursive;
+    font-size: 20px;
+    height:150px;
+    background-color: white;
+    width:1100px;
+    display:flex;
+    align-items: center;
+    border-radius: 8px;
+    border: solid rgb(189, 187, 187) 2px;
+    color:#f18b07;
+}
+
+
  /* footer */
 
-
+ 
 
 footer{
     margin-top: 15px;
